@@ -1,0 +1,18 @@
+# Top-most EditorConfig file
+root = true
+
+# encode
+[*.cpp]
+charset = utf-8
+# UTF-8(BOM付き)を利用したい場合は以下
+# charset = utf-8-bom
+
+[*.h]
+charset = utf-8
+# UTF-8(BOM付き)を利用したい場合は以下
+# charset = utf-8-bom
+
+[*.cs]
+charset = utf-8
+# UTF-8(BOM付き)を利用したい場合は以下
+# charset = utf-8-bom
