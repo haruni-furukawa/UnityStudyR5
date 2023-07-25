@@ -140,6 +140,7 @@ GameObject:
   - component: {fileID: 8214034544508625148}
   - component: {fileID: 7081767167602733516}
   - component: {fileID: 7987539809836319335}
+  - component: {fileID: 3229010719509808828}
   m_Layer: 0
   m_Name: gurasu
   m_TagString: Untagged
@@ -5059,6 +5060,26 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
+--- !u!154 &3229010719509808828
+TerrainCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5251582282351388864}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_TerrainData: {fileID: 0}
+  m_EnableTreeColliders: 1
 --- !u!1 &5354198352571479287
 GameObject:
   m_ObjectHideFlags: 0
