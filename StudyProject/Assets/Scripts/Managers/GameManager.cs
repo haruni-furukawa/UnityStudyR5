@@ -31,25 +31,33 @@ public class GameManager : SingletonBehavior<GameManager>
     // 初期化判定
     public bool IsInitialized() { return _isInitialized; }
 
+    // ステージクリア判定
+    public bool IsComplateStage() { return _isComplateStage; }
+
     // ステージクリア
     public void OnComplateStage()
     {
         if (_isComplateStage) { return; }
         _isComplateStage = true;
 
-        // TODO クリア演出
-        if (StageManager.instance.IsLastStage()) 
+        FXManager.instance.PlayFireworks();
+        GetPlayerController().SetFreezePosition(true);
+
+        DOVirtual.DelayedCall(3.0f, () =>
         {
-            // TODO クリア画面へ遷移
-            Debug.Log("ゲームクリア");
-            return;
-        }
-        else
-        {
-            // 次のステージへ
-            StageManager.instance.SetNextStage();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
+            if (StageManager.instance.IsLastStage())
+            {
+                // TODO クリア画面へ遷移
+                Debug.Log("ゲームクリア");
+                return;
+            }
+            else
+            {
+                // 次のステージへ
+                StageManager.instance.SetNextStage();
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+        });
     }
 
     // プレイヤーの死亡判定

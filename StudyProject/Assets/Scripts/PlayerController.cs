@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     private bool isFalling = false;
     void Update()
     {
+        if (GameManager.instance.IsComplateStage()) { return; }
         if (GameManager.instance.IsDyingPlayer()) { return; }
         float horizontal = Input.GetAxis("Horizontal");
         isMoving = horizontal != 0;
