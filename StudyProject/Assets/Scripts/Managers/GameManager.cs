@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager : SingletonBehavior<GameManager>
 {
     // ---------- 定数宣言 ----------
     // ---------- ゲームオブジェクト参照変数宣言 ----------
