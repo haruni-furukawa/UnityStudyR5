@@ -19,7 +19,7 @@ public class TrapController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.SetActive(false);
+            GameManager.instance.DiePlayer();
         }
     }
 }

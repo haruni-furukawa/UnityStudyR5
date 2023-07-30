@@ -167,6 +167,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a22351bc5e12fdc4aac0939e08c39a0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _cameraController: {fileID: 1955676343}
+  _playerPrefab: {fileID: 1766096030894478318, guid: 7a8f9ae503435f246b586fe7fc107761, type: 3}
 --- !u!1 &474784484
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,6 +427,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43934a6d673bc4d4f9d98e7582ba2631, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stagePrefabs:
+  - {fileID: 245409759873192775, guid: 7914fc4839bf5ee4d931838c78337456, type: 3}
 --- !u!1 &1810787719
 GameObject:
   m_ObjectHideFlags: 0
@@ -658,7 +662,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5eb85f2ecada439096749095b7b88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  topLeft: {fileID: 0}
-  bottomRight: {fileID: 0}
   cameraOffset: {x: 0, y: 2, z: 0}

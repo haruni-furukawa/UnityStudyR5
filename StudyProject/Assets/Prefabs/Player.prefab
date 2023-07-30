@@ -147,8 +147,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 5320389830783410877}
   animator: {fileID: 1704525965471077444}
-  moveSpeed: 3
-  jumpForce: 7
+  playerSpriteRenderer: {fileID: 4863045159087374179}
+  _moveSpeed: 3
+  _jumpForce: 7
 --- !u!1 &2835906575087076926
 GameObject:
   m_ObjectHideFlags: 0
