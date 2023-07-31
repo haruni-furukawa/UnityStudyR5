@@ -95,7 +95,7 @@ public class GameManager : SingletonBehavior<GameManager>
         if (_isInitialized) { return; }
         StageManager.instance.CreateCurrentStage();
         CreatePlayer();
-        SpawnPlayer();
+        SpawnPlayer(true);
         _isInitialized = true;
     }
 
@@ -107,7 +107,7 @@ public class GameManager : SingletonBehavior<GameManager>
     }
 
     // プレイヤーの出現
-    private void SpawnPlayer()
+    private void SpawnPlayer(bool isInitialize = false)
     {
         SpawnController spawnController = StageManager.instance.GetCurrentSpawnController();
         _playerController.transform.position = spawnController.transform.position;
@@ -117,6 +117,10 @@ public class GameManager : SingletonBehavior<GameManager>
             GetPlayerController().SetMoveSpeed(spawnController.GetMoveSpeed());
             GetPlayerController().SetJumpForce(spawnController.GetJumpForce());
         }
-        _cameraController.EnableSpawnCameraBehaviour();
+
+        if(!isInitialize)
+        {
+            _cameraController.EnableSpawnCameraBehaviour();
+        }
     }
 }
