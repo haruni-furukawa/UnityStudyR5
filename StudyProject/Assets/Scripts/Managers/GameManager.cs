@@ -47,8 +47,8 @@ public class GameManager : SingletonBehavior<GameManager>
         {
             if (StageManager.instance.IsLastStage())
             {
-                // TODO クリア画面へ遷移
-                Debug.Log("ゲームクリア");
+                // クリア画面へ遷移
+                SceneManager.LoadScene("ClearScene");
                 return;
             }
             else
