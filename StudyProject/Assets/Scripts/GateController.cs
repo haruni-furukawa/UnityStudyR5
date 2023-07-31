@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class GateController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    // ---------- 定数宣言 ----------
+    // ---------- ゲームオブジェクト参照変数宣言 ----------
+    // ---------- プレハブ ----------
+    // ---------- プロパティ ----------
+    // ---------- クラス変数宣言 ----------
+    // ---------- インスタンス変数宣言 ----------
+    // ---------- コンストラクタ・デストラクタ ----------
+    // ---------- Unity組込関数 ----------
+    // ---------- Public関数 ----------
+    // ---------- Protected関数 ----------
+    // ---------- Private関数 ----------
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (other.gameObject.CompareTag("Player"))
+        {
+            GameManager.instance.OnComplateStage();
+        }
     }
 }

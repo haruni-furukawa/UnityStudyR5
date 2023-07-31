@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 464539795872386010}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34,7 +34,7 @@ Transform:
   m_Children:
   - {fileID: 1676585357673280040}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &5320389830783410877
 Rigidbody2D:
@@ -147,8 +147,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 5320389830783410877}
   animator: {fileID: 1704525965471077444}
-  moveSpeed: 3
-  jumpForce: 7
+  playerSpriteRenderer: {fileID: 4863045159087374179}
+  _moveSpeed: 3
+  _jumpForce: 7
 --- !u!1 &2835906575087076926
 GameObject:
   m_ObjectHideFlags: 0
