@@ -460,7 +460,7 @@ GameObject:
   - component: {fileID: 4947864508335360580}
   m_Layer: 0
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1267,6 +1267,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6741871548014703559}
     m_Modifications:
+    - target: {fileID: 1735079475805721903, guid: eb33ba1dcb23a864d9e8dc5eaf75f91a, type: 3}
+      propertyPath: m_Size.x
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735079475805721903, guid: eb33ba1dcb23a864d9e8dc5eaf75f91a, type: 3}
+      propertyPath: m_Size.y
+      value: 1.3
+      objectReference: {fileID: 0}
     - target: {fileID: 2920146417863418631, guid: eb33ba1dcb23a864d9e8dc5eaf75f91a, type: 3}
       propertyPath: m_RootOrder
       value: 5

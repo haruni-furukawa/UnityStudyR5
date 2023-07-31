@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class CameraFieldController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    // ---------- 定数宣言 ----------
+    // ---------- ゲームオブジェクト参照変数宣言 ----------
+    [SerializeField] private Transform _topLeft;
+    [SerializeField] private Transform _bottomRight;
+    // ---------- プレハブ ----------
+    // ---------- プロパティ ----------
+    // ---------- クラス変数宣言 ----------
+    // ---------- インスタンス変数宣言 ----------
+    // ---------- コンストラクタ・デストラクタ ----------
+    // ---------- Unity組込関数 ----------
+    // ---------- Public関数 ----------
+    public Transform GetTopLeft() { return _topLeft; }
+    public Transform GetBottomRight() { return _bottomRight; }
+    // ---------- Protected関数 ----------
+    // ---------- Private関数 ----------
 }
