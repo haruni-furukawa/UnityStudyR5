@@ -13,10 +13,16 @@ public class PlayerController : MonoBehaviour
     private bool isMoving = false;
     private bool isJumping = false;
     private bool isFalling = false;
+
+    private GameObject _moveStage = default;
+
     void Update()
     {
         if (GameManager.instance.IsComplateStage()) { return; }
         if (GameManager.instance.IsDyingPlayer()) { return; }
+
+        transform.parent = _moveStage == default ? default : _moveStage.transform;
+
         float horizontal = Input.GetAxis("Horizontal");
         isMoving = horizontal != 0;
         isFalling = rb.velocity.y < -0.5f;
@@ -110,9 +116,22 @@ public class PlayerController : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Stage"))
+        if (collision.CompareTag("Stage") || collision.CompareTag("MoveStage"))
         {
             isJumping = false;
+        }
+
+        if (collision.CompareTag("MoveStage"))
+        {
+            _moveStage = collision.gameObject;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("MoveStage"))
+        {
+            _moveStage = default;
         }
     }
 }
