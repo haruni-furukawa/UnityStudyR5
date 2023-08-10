@@ -9,6 +9,7 @@ public class GameManager : SingletonBehavior<GameManager>
     // ---------- 定数宣言 ----------
     // ---------- ゲームオブジェクト参照変数宣言 ----------
     [SerializeField] private CameraController _cameraController = default;
+    [SerializeField] private BGController _bgController = default;
     // ---------- プレハブ ----------
     [SerializeField] private GameObject _playerPrefab = default;
     // ---------- プロパティ ----------
@@ -96,6 +97,8 @@ public class GameManager : SingletonBehavior<GameManager>
         StageManager.instance.CreateCurrentStage();
         CreatePlayer();
         SpawnPlayer(true);
+
+        _bgController.gameObject.SetActive(true);
         _isInitialized = true;
     }
 
