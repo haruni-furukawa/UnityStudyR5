@@ -9,6 +9,7 @@ public class BackGroundController : MonoBehaviour
 
     void Start()
     {
+        transform.position = Vector3.zero;
         _mainCamera = Camera.main;
         _relativePosition = _mainCamera.transform.position - transform.position;
     }
