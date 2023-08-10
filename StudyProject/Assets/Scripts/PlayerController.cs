@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && !isJumping && !isFalling)
         {
             Jump();
+            GetComponent<AudioSource>().Play();
         }
         rb.velocity = new Vector2(horizontal * _moveSpeed, rb.velocity.y);
         animator.SetBool("IsMoving", isMoving);
