@@ -26631,7 +26631,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1029334954517925071}
   - component: {fileID: 7829947759617990585}
-  - component: {fileID: 4732215638143872359}
   - component: {fileID: 286647890636012182}
   m_Layer: 0
   m_Name: Saw
@@ -26709,23 +26708,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4732215638143872359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7002674405901737835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a14f599c978116438921d72057945f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  animator: {fileID: 0}
-  playerSpriteRenderer: {fileID: 0}
-  _moveSpeed: 0
-  _jumpForce: 0
 --- !u!114 &286647890636012182
 MonoBehaviour:
   m_ObjectHideFlags: 0
