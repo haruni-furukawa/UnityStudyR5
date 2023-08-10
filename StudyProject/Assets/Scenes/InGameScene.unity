@@ -173,7 +173,6 @@ MonoBehaviour:
   - {fileID: 1966479664}
   - {fileID: 931856610}
   - {fileID: 602605401}
-  _firework: {fileID: 1978689737715041617, guid: afa54037ffe627545886e2741abb365d, type: 3}
 --- !u!4 &263544570 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1978689737715041621, guid: afa54037ffe627545886e2741abb365d, type: 3}
@@ -757,7 +756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stagePrefabs:
-  - {fileID: 245409759873192775, guid: 7914fc4839bf5ee4d931838c78337456, type: 3}
+  - {fileID: 5354198352571479287, guid: 36b7f49d712b7f74e9e71e4a7d9d9c8f, type: 3}
 --- !u!1 &1810787719
 GameObject:
   m_ObjectHideFlags: 0
